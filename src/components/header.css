@@ -1,0 +1,55 @@
+header {
+  background: #222;
+  padding: 1.5rem;
+}
+
+.navb {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1rem;
+    margin-right: 1rem;
+}
+
+.nav-link:last-of-type{
+    margin-right: 0;
+}
+
+.paginaActual {
+    border-bottom: 2px solid #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .navb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+  }
+  .navb h1 {
+    margin-left: 20px;
+  }
+
+  nav {
+    padding-bottom: 0;
+  }
+}

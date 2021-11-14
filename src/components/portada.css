@@ -1,0 +1,44 @@
+.portada {
+  height: 300px;
+}
+
+.saludo {
+  display: flex;
+  flex-direction: column;
+  color: #222;
+  align-items: flex-end;
+  margin-right: 30px;
+  margin-left: 220px;
+}
+
+.saludo h2 {
+  font-size: 3rem;
+  padding-top: 30px;
+}
+
+.saludo p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .portada {
+    height: 800px;
+  }
+
+  .saludo {
+    margin-right: 150px;
+    padding-top: 30px;
+    
+  }
+  .saludo h2 {
+    font-size: 4.6rem;
+    padding-top: 50px;
+  }
+  .saludo p {
+    font-size: 2.6rem;
+    font-weight: 200;
+    margin: 0;
+  }
+ 
+}
