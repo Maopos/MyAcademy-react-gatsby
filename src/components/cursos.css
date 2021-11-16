@@ -1,0 +1,35 @@
+
+
+.curso-page h2{
+    text-align: center;
+    margin: 20px;
+}
+.curso-page p{
+    text-align: justify;
+    max-width: 80%;
+    margin: 30px auto;
+    font-weight: 100;
+}
+
+#img-curso-page {
+    max-width: 80%;
+    margin: auto;
+    display: block;
+}
+
+#subscribe{
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: rgba(44, 62, 80, .85);
+    color: #fff;
+    display: block;
+    text-align: center; 
+    text-decoration: none;
+    max-width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+    #img-curso-page{
+        max-width: 40%;
+    }
+}

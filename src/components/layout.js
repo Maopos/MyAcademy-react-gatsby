@@ -1,7 +1,8 @@
 import React from "react"
 import Header from "./Header"
+import Footer from "./Footer"
 import Helmet from "react-helmet"
-import './layout.css'
+import "./layout.css"
 
 const Layout = props => {
   return (
@@ -24,6 +25,7 @@ const Layout = props => {
       </Helmet>
       <Header />
       {props.children}
+      <Footer></Footer>
     </>
   )
 }

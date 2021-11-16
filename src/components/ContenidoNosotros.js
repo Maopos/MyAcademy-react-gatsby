@@ -1,11 +1,11 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import "./contenidoInicio.css"
+import "./contenidoNosotros.css"
 
-const ContenidoInicio = () => {
+const ContenidoNosotros = () => {
   const info = useStaticQuery(graphql`
     {
-      allDatoCmsPagina(filter: { slug: { eq: "inicio" } }) {
+      allDatoCmsPagina(filter: { slug: { eq: "nosotros" } }) {
         nodes {
           titulo
           contenido
@@ -25,19 +25,21 @@ const ContenidoInicio = () => {
 
   return (
     <>
-      <div id="inicio">
-        <div id="col1-inicio">
+      <center>
+        <h2 id="nosotros-titulo">{titulo}</h2>
+      </center>
+      <div id="nosotros">
+        <div id="col1-nosotros">
           <center>
-            <h2>{titulo}</h2>
             <p>{contenido}</p>
           </center>
         </div>
         <center>
-          <img id="col2-inicio-img" src={imagen.fluid.srcSet} alt="imagen" />
+          <img id="col2-nosotros-img" src={imagen.fluid.srcSet} alt="imagen" />
         </center>
       </div>
     </>
   )
 }
 
-export default ContenidoInicio
+export default ContenidoNosotros

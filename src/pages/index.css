@@ -1,0 +1,13 @@
+#lista-cursos{
+    max-width: 80%;
+    
+    margin: 4rem auto 0;
+}
+
+@media screen and (min-width: 768px) {
+    #lista-cursos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr );
+        gap: 30px;
+    }
+}
